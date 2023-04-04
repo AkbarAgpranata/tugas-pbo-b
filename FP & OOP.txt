@@ -1,0 +1,39 @@
+﻿# Jelaskan perbedaan functional programing dan oop pada python beserta contoh program masing-masing
+# Functional Programming dan OOP (Object Oriented Programming) adalah dua paradigma pemrograman yang berbeda dalam cara mereka memandang dan menangani data dan perilaku program. Python mendukung keduanya, dan perbedaan antara keduanya terletak pada pendekatan yang digunakan dalam menyelesaikan masalah.
+
+# Functional Programming (FP) adalah paradigma pemrograman yang berfokus pada fungsi dan bagaimana mereka diaplikasikan ke data. Dalam FP, fungsi dianggap sebagai objek utama dan mereka diperlakukan sebagai nilai yang dapat dikirim ke fungsi lain sebagai argumen atau kembalian dari fungsi lain
+#Contoh Program FP :
+#fungsi yang mengembalikan jumlah kuadrat dari dua bilangan
+def bilanganKuadrat(x, y):
+    return (x**2) + (y**2)
+
+#Contoh Program
+hasil = bilanganKuadrat(6, 2)
+print(hasil) #output: 40
+
+
+#OOP adalah paradigma pemrograman yang memandang program sebagai kumpulan objek yang saling berinteraksi untuk mencapai tujuan tertentu. Dalam OOP, objek dapat memiliki sifat (attributes) dan perilaku (behaviors), dan dapat berinteraksi satu sama lain melalui metode. Konsep utama dalam OOP adalah enkapsulasi, pewarisan, dan polimorfisme.
+#Contoh Program OOP
+#class kucing
+class Kucing:
+    def __init__(self, nama, umur):
+        self.nama = nama
+        self.umur = umur
+
+    def suara(self):
+        return "Meow"
+
+#subclass kucing anggora
+class KucingAnggora(Kucing):
+    def suara(self):
+        return "Meow Panjang"
+
+#membuat objek dari class
+kucing_1 = Kucing("Tom", 2)
+kucing_2 = KucingAnggora("Lucy", 3)
+
+#memanggil metode objek
+print(kucing_1.suara()) #output: "Meow"
+print(kucing_2.suara()) #output: "Meow Panjang"
+
+
